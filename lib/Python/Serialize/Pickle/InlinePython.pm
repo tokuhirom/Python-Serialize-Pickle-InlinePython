@@ -78,7 +78,11 @@ Python::Serialize::Pickle::InlinePython - handle pickled data with Inline::Pytho
 
 Python::Serialize::Pickle::InlinePython is a python's pickle data serializer/deserializer using Inline::Python.
 
-This module has same interface with L<Python::Serialize::Pickle>.L<Python::Serialize::Pickle> is no longer maintained, has some problems.
+This module has same interface with L<Python::Serialize::Pickle>.L<Python::Serialize::Pickle> is no longer maintained, does not works with newer version of Python.
+
+=head1 ALTERNATIVES
+
+You could always dump the data structure out as YAML in Python and then read it back in with YAML in Perl.
 
 =head1 AUTHOR
 

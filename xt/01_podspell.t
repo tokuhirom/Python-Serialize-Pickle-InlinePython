@@ -8,3 +8,4 @@ __DATA__
 Tokuhiro Matsuno
 tokuhirom  slkjfd gmail.com
 Python::Serialize::Pickle::InlinePython
+YAML
