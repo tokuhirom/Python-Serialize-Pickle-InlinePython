@@ -11,13 +11,14 @@ import pickle
 def _LoadFile(fname):
     return pickle.load(open(fname, 'rb'))
 
-def DumpFile(fname, obj):
+def _DumpFile(fname, obj):
     return pickle.dump(obj, open(fname, 'wb'))
 ...
 
 sub LoadFile { scalar _LoadFile(@_) }
 sub Load { scalar loads(@_) }
 sub Dump { dumps(@_) }
+sub DumpFile { _DumpFile(@_) }
 
 1;
 __END__

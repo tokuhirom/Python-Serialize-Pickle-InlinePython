@@ -16,7 +16,7 @@ def __load(unp):
     try:
         return unp.load()
     except EOFError:
-        return "EOFErrorEOFErrorEOFErrorEOFError"
+        return "EOFErrorEOFErrorEOFErrorEOFError" # wtf?
 ...
 
 sub new {
