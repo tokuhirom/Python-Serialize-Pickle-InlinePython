@@ -39,7 +39,7 @@ sub load {
     die "this is not a reader-obj" unless $self->{unpickler};
     my $ret = __load($self->{unpickler});
     if ($ret eq 'EOFErrorEOFErrorEOFErrorEOFError') {
-        return undef;
+        return undef; ## no critic
     } else {
         return $ret;
     }
