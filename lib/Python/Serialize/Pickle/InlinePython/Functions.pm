@@ -19,4 +19,49 @@ sub LoadFile { scalar _LoadFile(@_) }
 sub Load { scalar loads(@_) }
 sub Dump { dumps(@_) }
 
+1;
 __END__
+
+=head1 NAME
+
+Python::Serialize::Pickle::InlinePython::Functions - functional version of pickle serializer/deserializer
+
+=head1 SYNOPSIS
+
+    use Python::Serialize::Pickle::InlinePython::Functions;
+    my $serialized = Dump([1,2,3]);
+    Load($serialized);
+
+    DumpFile("foo.pickle", [1,2,3]);
+    LoadFile("foo.pickle");
+
+=head1 METHODS
+
+=over 4
+
+=item Dump($obj)
+
+dump object to memory
+
+=item Load($serialized)
+
+load serialized data from memory
+
+=item DumpFile($fname, $obj)
+
+dump data to file
+
+=item LoadFile($fname)
+
+load data from file
+
+=back
+
+=head1 AUTHORS
+
+Tokuhiro Matsuno
+
+=head1 SEE ALSO
+
+L<Python::Serialize::Pickle::InlinePython>
+
