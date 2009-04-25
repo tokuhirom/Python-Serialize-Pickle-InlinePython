@@ -2,8 +2,7 @@ package Python::Serialize::Pickle::InlinePython::Functions;
 use strict;
 use warnings;
 use base 'Exporter';
-our @EXPORT_OK = qw/Dump Load DumpFile LoadFile/;
-our %EXPORT_TAGS = (all => \@EXPORT_OK);
+our @EXPORT = qw/Dump Load DumpFile LoadFile/;
 
 use Inline Python => <<'...';
 from pickle import dumps, loads

@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Python::Serialize::Pickle::InlinePython::Functions ':all';
+use Python::Serialize::Pickle::InlinePython::Functions;
 use Test::More tests => 4;
 use File::Temp;
 
