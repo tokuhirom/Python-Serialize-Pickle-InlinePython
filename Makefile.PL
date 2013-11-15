@@ -7,6 +7,8 @@ requires 'Inline::Python' => 0.28;
 tests 't/*.t';
 author_tests 'xt';
 
+repository 'https://github.com/tokuhirom/Python-Serialize-Pickle-InlinePython';
+
 build_requires 'Test::More';
 use_test_base;
 auto_include;
