@@ -1,4 +1,6 @@
-Revision history for Perl extension Python::Serialize::Pickle::InlinePython
+Revision history for Perl module Python::Serialize::Pickle::InlinePython
 
-0.01    Sun Apr 26 00:16:58 2009
+0.01 2009-04-25
+
         - original version
+
